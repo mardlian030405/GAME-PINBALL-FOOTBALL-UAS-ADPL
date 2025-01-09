@@ -103,33 +103,47 @@
       </div>
     </header>
     <div
-      class="flex flex-col items-center justify-center h-screen px-4 sm:px-0"
+      class="flex flex-col items-center justify-center h-screen px-4 sm:px-0 bg-gray-100"
     >
-      <h1 class="text-2xl sm:text-4xl font-bold mb-4 text-center">
+      <h1
+        class="text-2xl sm:text-4xl font-bold mb-4 text-center text-indigo-900"
+      >
         Pinball Game
       </h1>
       <canvas
         id="gameCanvas"
-        class="border border-gray-500 w-full max-w-xs sm:max-w-sm"
+        class="border border-gray-500 w-full max-w-xs sm:max-w-sm rounded-lg shadow-lg"
         width="400"
         height="600"
       ></canvas>
-      <div class="flex mt-4 space-x-2">
+      <div class="flex mt-4 space-x-36">
         <button
           id="leftBtn"
-          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 shadow-md"
         >
           Left
         </button>
         <button
           id="rightBtn"
-          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 shadow-md"
         >
           Right
         </button>
       </div>
-      <div id="scoreBoard" class="mt-4 text-lg text-center">Score: 0</div>
-      <div id="highScoreBoard" class="text-lg text-center">High Score: 0</div>
+      <div
+        id="scoreBoard"
+        class="mt-6 text-lg text-center bg-white p-4 rounded-lg shadow-lg w-full max-w-xs"
+      >
+        <p class="text-gray-700 font-semibold">Score:</p>
+        <p class="text-2xl font-bold text-blue-500" id="currentScore">0</p>
+      </div>
+      <div
+        id="highScoreBoard"
+        class="mt-4 text-lg text-center bg-white p-4 rounded-lg shadow-lg w-full max-w-xs"
+      >
+        <p class="text-gray-700 font-semibold">High Score:</p>
+        <p class="text-2xl font-bold text-green-500" id="currentHighScore">0</p>
+      </div>
     </div>
     <footer class="bg-indigo-900">
       <div
