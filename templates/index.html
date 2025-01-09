@@ -11,7 +11,10 @@
       <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
           <div class="md:flex md:items-center md:gap-12">
-            <a class="block text-white font-bold text-2xl" href="/">
+            <a
+              class="block text-white font-bold text-2xl max-sm:text-5xl"
+              href="/"
+            >
               <h1>PINBALL GAME</h1>
             </a>
           </div>
@@ -53,7 +56,7 @@
                 class="rounded-md bg-white px-5 py-2.5 hover:bg-indigo-900 hover:text-white text-sm font-medium text-indigo-900 shadow"
                 href="/game"
               >
-                Main Sekarang
+                Play Now
               </a>
             </div>
 
@@ -106,32 +109,41 @@
         </nav>
       </div>
     </header>
-    <section class="bg-gray-50">
+    <section
+      class="p-6 bg-gray-50 max-md:h-600"
+      style="
+        background-image: url('/static/assets/bghome.jpg');
+        background-size: cover; /* Memastikan gambar mencakup seluruh elemen */
+        background-position: center; /* Pusatkan gambar */
+        background-repeat: no-repeat; /* Hindari pengulangan gambar */
+        height: 100vh; /* Pastikan tinggi sesuai layar penuh */
+      "
+    >
       <div
         class="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center"
       >
         <div class="mx-auto max-w-xl text-center">
-          <h1 class="text-3xl font-extrabold sm:text-5xl">
+          <h1 class="text-3xl font-extrabold text-white sm:text-5xl">
             GAME PINBALL
-            <strong class="font-extrabold text-red-700 sm:block">
+            <strong class="font-extrabold text-white sm:block">
               RASAKAN PENGALAMAN BERMAIN YANG SERU
             </strong>
           </h1>
 
-          <p class="mt-4 sm:text-xl/relaxed">
+          <p class="mt-4 sm:text-xl/relaxed text-white font-extrabold">
             AYOO BERMAIN DAN RAIH SKOR TERTINGGIMU!!!!
           </p>
 
           <div class="mt-8 flex flex-wrap justify-center gap-4">
             <a
-              class="block w-full rounded bg-red-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
+              class="block w-full rounded bg-indigo-950 px-12 py-3 text-sm font-medium text-white shadow hover:bg-red-700 focus:outline-none focus:ring active:bg-red-500 sm:w-auto"
               href="/game"
             >
               Get Started
             </a>
 
             <a
-              class="block w-full rounded px-12 py-3 text-sm font-medium text-red-600 shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
+              class="block w-full rounded px-12 py-3 text-sm font-medium text-white shadow hover:text-red-700 focus:outline-none focus:ring active:text-red-500 sm:w-auto"
               href="/tutorial"
             >
               Learn More
